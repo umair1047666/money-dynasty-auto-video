@@ -29,7 +29,7 @@ voice:
 
 music:
   track: "music/track.mp3"   # royalty-free track, placed here (see music/README.md)
-  level_db: -26              # LONGS: music sits 26 dB under the voice (volume=0.05, i.e. 5%);
+  level_db: -24              # LONGS: music sits ~24 dB under the voice (volume=0.06, i.e. 6%);
                              # sidechain ducking drops it to ~-34 dB (~2%) under the voice.
                              # Money Dynasty track (The_Money_Dynasty.mp3) measures -11.96 LUFS,
                              # ~21 dB LOUDER than the Steel Atlas track (-33.35 LUFS), so 10%
