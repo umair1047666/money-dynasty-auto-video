@@ -25,8 +25,8 @@ jobs:
 
       - name: Commit heartbeat
         run: |
-          git config user.name "steel-atlas-bot"
-          git config user.email "steel-atlas-bot@users.noreply.github.com"
+          git config user.name "money-dynasty-bot"
+          git config user.email "money-dynasty-bot@users.noreply.github.com"
           git add state/heartbeat.md
           git diff --cached --quiet && echo "nothing to commit" || git commit -m "keepalive heartbeat [skip ci]"
           git push
