@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: steel-atlas-pipeline
+  group: money-dynasty-pipeline
   cancel-in-progress: false
 
 permissions:
@@ -57,8 +57,8 @@ jobs:
 
       - name: Commit job state
         run: |
-          git config user.name "steel-atlas-bot"
-          git config user.email "steel-atlas-bot@users.noreply.github.com"
+          git config user.name "money-dynasty-bot"
+          git config user.email "money-dynasty-bot@users.noreply.github.com"
           git add -A jobs queue 2>/dev/null || true
           git add -A state 2>/dev/null || true
           git diff --cached --quiet && echo "nothing to commit" || git commit -m "clip-search: job state update [skip ci]"
