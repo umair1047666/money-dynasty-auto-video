@@ -39,7 +39,11 @@ Run the stages **ONE AT A TIME, in order**. Never run two stages at once
 ## Config (do not change without the user)
 - Channel: Money Dynasty (finance, wealth, billionaire documentaries)
 - YouTube category: **27 (Education)**
-- Visual mix: **40% motion / 60% stills**
+- Visual mix: **40% motion / 60% stills (TARGET only, NOT enforced in config)**
+  Per scene the pipeline tries: real clip → real photo + zoom → AI still + zoom
+  → title card. So the actual ratio in a video depends on what clips are found,
+  not on this target. There is NO AI video generator in the pipeline — "AI
+  motion" means AI stills with zoom/pan, not real AI video.
 - Final: 1920×1080, 30fps, CRF 18, loudnorm −14 LUFS
 - Clips <720p rejected; 720p upscaled to 1080p (lanczos)
 
