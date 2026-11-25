@@ -1,0 +1,30 @@
+{
+  "job_id": "md-test-002",
+  "stage": "clip-search",
+  "stages": {
+    "clip-search": {
+      "ok": true,
+      "detail": ""
+    }
+  },
+  "manifest": [
+    {
+      "scene": 1,
+      "clip": "/home/runner/work/money-dynasty-auto-video/money-dynasty-auto-video/jobs/md-test-002/clips/scene-001.mp4",
+      "source": "pexels",
+      "kind": "clip"
+    },
+    {
+      "scene": 2,
+      "clip": "/home/runner/work/money-dynasty-auto-video/money-dynasty-auto-video/jobs/md-test-002/clips/scene-002.mp4",
+      "source": "pexels",
+      "kind": "clip"
+    },
+    {
+      "scene": 3,
+      "clip": "/home/runner/work/money-dynasty-auto-video/money-dynasty-auto-video/jobs/md-test-002/clips/scene-003.mp4",
+      "source": "pexels",
+      "kind": "clip"
+    }
+  ]
+}
