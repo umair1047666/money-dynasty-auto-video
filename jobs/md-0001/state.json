@@ -1,8 +1,12 @@
 {
   "job_id": "md-0001",
-  "stage": "clip-search",
+  "stage": "voice",
   "stages": {
     "clip-search": {
+      "ok": true,
+      "detail": ""
+    },
+    "voice": {
       "ok": true,
       "detail": ""
     }
@@ -1034,5 +1038,8 @@
       "source": "pexels",
       "kind": "clip"
     }
-  ]
+  ],
+  "voice": "/home/runner/work/money-dynasty-auto-video/money-dynasty-auto-video/jobs/md-0001/voice.mp3",
+  "voice_words": "/home/runner/work/money-dynasty-auto-video/money-dynasty-auto-video/jobs/md-0001/voice-words.json",
+  "voice_duration_s": 963.19
 }
