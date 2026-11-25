@@ -148,10 +148,22 @@ def pull_job(job_id):
     job_folder = _find_folder(service, job_id, jobs_root)
     if not job_folder:
         raise RuntimeError(f"job {job_id} not found in Drive job store")
-    resp = service.files().list(
-        q=f"'{job_folder}' in parents and trashed = false",
-        fields="files(id,name)", pageSize=100).execute()
-    for f in resp.get("files", []):
+    # Paginate: a job can hold far more than 100 files (md-0001 has 175).
+    # Without pagination the pull silently drops files past the first page,
+    # and the next stage then fails ("no voice file") even though the file
+    # IS in the Drive job store. This broke render for the first real jobs.
+    all_files = []
+    page_token = None
+    while True:
+        resp = service.files().list(
+            q=f"'{job_folder}' in parents and trashed = false",
+            fields="files(id,name),nextPageToken", pageSize=100,
+            pageToken=page_token).execute()
+        all_files.extend(resp.get("files", []))
+        page_token = resp.get("nextPageToken")
+        if not page_token:
+            break
+    for f in all_files:
         name = f["name"]
         if name in KEEP_PATTERNS:
             dest = jdir / name
