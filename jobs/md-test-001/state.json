@@ -1,13 +1,13 @@
 {
   "job_id": "md-test-001",
-  "stage": "clip-search",
+  "stage": "voice",
   "stages": {
     "clip-search": {
       "ok": true,
       "detail": ""
     },
     "voice": {
-      "ok": false,
+      "ok": true,
       "detail": ""
     }
   },
@@ -31,7 +31,7 @@
       "kind": "clip"
     }
   ],
-  "voice": null,
+  "voice": "/home/runner/work/money-dynasty-auto-video/money-dynasty-auto-video/jobs/md-test-001/voice.wav",
   "voice_words": null,
-  "voice_duration_s": null
+  "voice_duration_s": 15.12
 }
