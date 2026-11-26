@@ -1,6 +1,6 @@
 {
   "job_id": "md-test-002",
-  "stage": "render",
+  "stage": "upload",
   "stages": {
     "clip-search": {
       "ok": true,
@@ -11,6 +11,10 @@
       "detail": ""
     },
     "render": {
+      "ok": true,
+      "detail": ""
+    },
+    "upload": {
       "ok": true,
       "detail": ""
     }
@@ -51,5 +55,14 @@
     "black_segments": [],
     "ok": true
   },
-  "final": "/home/runner/work/money-dynasty-auto-video/money-dynasty-auto-video/jobs/md-test-002/final.mp4"
+  "final": "/home/runner/work/money-dynasty-auto-video/money-dynasty-auto-video/jobs/md-test-002/final.mp4",
+  "drive": {
+    "file_id": "DRY-RUN-NO-UPLOAD",
+    "link": "https://drive.google.com/drive/folders/DRY-RUN"
+  },
+  "youtube": {
+    "video_id": "DRY-RUN-NO-UPLOAD",
+    "url": "https://www.youtube.com/watch?v=DRY-RUN"
+  },
+  "status": "dry-run-done"
 }
