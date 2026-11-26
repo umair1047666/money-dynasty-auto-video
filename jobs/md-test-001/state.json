@@ -1,20 +1,8 @@
 {
   "job_id": "md-test-001",
-  "stage": "upload",
+  "stage": "clip-search",
   "stages": {
     "clip-search": {
-      "ok": true,
-      "detail": ""
-    },
-    "voice": {
-      "ok": true,
-      "detail": ""
-    },
-    "render": {
-      "ok": true,
-      "detail": ""
-    },
-    "upload": {
       "ok": true,
       "detail": ""
     }
@@ -38,31 +26,5 @@
       "source": "pexels",
       "kind": "clip"
     }
-  ],
-  "voice": "/home/runner/work/money-dynasty-auto-video/money-dynasty-auto-video/jobs/md-test-001/voice.mp3",
-  "voice_words": null,
-  "voice_duration_s": 22.18,
-  "qc": {
-    "file": "/home/runner/work/money-dynasty-auto-video/money-dynasty-auto-video/jobs/md-test-001/final.mp4",
-    "checks": {
-      "probe": "OK: 1920x1080, 22.20s, audio=True",
-      "resolution": "OK",
-      "duration": "OK: 22.20s",
-      "audio_present": "OK: mean volume -15.9",
-      "audio_duration": "OK: audio stream 22.18s",
-      "black": "OK: no black segment over 1s"
-    },
-    "black_segments": [],
-    "ok": true
-  },
-  "final": "/home/runner/work/money-dynasty-auto-video/money-dynasty-auto-video/jobs/md-test-001/final.mp4",
-  "drive": {
-    "file_id": "DRY-RUN-NO-UPLOAD",
-    "link": "https://drive.google.com/drive/folders/DRY-RUN"
-  },
-  "youtube": {
-    "video_id": "DRY-RUN-NO-UPLOAD",
-    "url": "https://www.youtube.com/watch?v=DRY-RUN"
-  },
-  "status": "dry-run-done"
+  ]
 }
